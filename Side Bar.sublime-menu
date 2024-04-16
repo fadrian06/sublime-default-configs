@@ -1,0 +1,34 @@
+[
+  {
+    "caption": "Open Folder…",
+    "command": "open_folder",
+    "args": {
+      "dirs": []
+    }
+  },
+  {
+    "caption": "Open Containing Folder…",
+    "command": "open_containing_folder",
+    "args": {
+      "files": []
+    }
+  },
+  {
+    "caption": "Reveal Link Source",
+    "command": "reveal_link_source",
+    "args": {
+      "dirs": []
+    }
+  },
+  {
+    "caption": "-",
+    "id": "repo_commands"
+  },
+  {
+    "caption": "Folder History…",
+    "command": "sublime_merge_folder_history",
+    "args": {
+      "paths": []
+    }
+  }
+]
