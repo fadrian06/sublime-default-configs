@@ -4,43 +4,171 @@
     "mnemonic": "F",
     "id": "file",
     "children": [
-      { "command": "prompt_open_folder", "caption": "Open Folder…", "platform": "!OSX" },
+      {
+        "command": "prompt_open_folder",
+        "caption": "Open Folder…",
+        "platform": "!OSX"
+      },
       {
         "caption": "Open Recent",
         "mnemonic": "R",
-        "children":
-        [
-          { "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Reopen Closed File" },
-          { "caption": "-" },
-          { "command": "open_recent_file", "args": {"index": 0 } },
-          { "command": "open_recent_file", "args": {"index": 1 } },
-          { "command": "open_recent_file", "args": {"index": 2 } },
-          { "command": "open_recent_file", "args": {"index": 3 } },
-          { "command": "open_recent_file", "args": {"index": 4 } },
-          { "caption": "-" },
-          { "command": "open_recent_folder", "args": {"index": 0 } },
-          { "command": "open_recent_folder", "args": {"index": 1 } },
-          { "command": "open_recent_folder", "args": {"index": 2 } },
-          { "command": "open_recent_folder", "args": {"index": 3 } },
-          { "command": "open_recent_folder", "args": {"index": 4 } },
-          { "caption": "-" },
-          { "command": "clear_recent_files", "caption": "Clear Items" }
+        "children": [
+          {
+            "command": "reopen_last_file",
+            "args": {
+              "source": "window"
+            },
+            "caption": "Reopen Closed File"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "open_recent_file",
+            "args": {
+              "index": 0
+            }
+          },
+          {
+            "command": "open_recent_file",
+            "args": {
+              "index": 1
+            }
+          },
+          {
+            "command": "open_recent_file",
+            "args": {
+              "index": 2
+            }
+          },
+          {
+            "command": "open_recent_file",
+            "args": {
+              "index": 3
+            }
+          },
+          {
+            "command": "open_recent_file",
+            "args": {
+              "index": 4
+            }
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "open_recent_folder",
+            "args": {
+              "index": 0
+            }
+          },
+          {
+            "command": "open_recent_folder",
+            "args": {
+              "index": 1
+            }
+          },
+          {
+            "command": "open_recent_folder",
+            "args": {
+              "index": 2
+            }
+          },
+          {
+            "command": "open_recent_folder",
+            "args": {
+              "index": 3
+            }
+          },
+          {
+            "command": "open_recent_folder",
+            "args": {
+              "index": 4
+            }
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "clear_recent_files",
+            "caption": "Clear Items"
+          }
         ]
       },
-      { "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Split View", "mnemonic": "e" },
-      { "command": "save", "args": {"async": true}, "caption": "Save", "mnemonic": "S" },
-      { "command": "prompt_save_as", "caption": "Save As…", "mnemonic": "A" },
-      { "command": "save_all", "caption": "Save All", "mnemonic": "l" },
-      { "caption": "-", "id": "window" },
-      { "command": "new_window", "caption": "New Window", "mnemonic": "W" },
-      { "command": "close_window", "caption": "Close Window" },
-      { "caption": "-", "id": "close" },
-      { "command": "close", "caption": "Close File", "mnemonic": "C" },
-      { "command": "revert", "caption": "Revert File", "mnemonic": "v" },
-      { "command": "close_all", "caption": "Close All Files" },
-      { "caption": "-", "id": "exit" },
-      { "command": "exit", "caption": "Exit", "mnemonic": "x", "platform": "Windows" },
-      { "command": "exit", "caption": "Quit", "mnemonic": "Q", "platform": "Linux" },
+      {
+        "command": "clone_file",
+        "args": {
+          "add_to_selection": true,
+          "retain_viewport_position": true
+        },
+        "caption": "Split View",
+        "mnemonic": "e"
+      },
+      {
+        "command": "save",
+        "args": {
+          "async": true
+        },
+        "caption": "Save",
+        "mnemonic": "S"
+      },
+      {
+        "command": "prompt_save_as",
+        "caption": "Save As…",
+        "mnemonic": "A"
+      },
+      {
+        "command": "save_all",
+        "caption": "Save All",
+        "mnemonic": "l"
+      },
+      {
+        "caption": "-",
+        "id": "window"
+      },
+      {
+        "command": "new_window",
+        "caption": "New Window",
+        "mnemonic": "W"
+      },
+      {
+        "command": "close_window",
+        "caption": "Close Window"
+      },
+      {
+        "caption": "-",
+        "id": "close"
+      },
+      {
+        "command": "close",
+        "caption": "Close File",
+        "mnemonic": "C"
+      },
+      {
+        "command": "revert",
+        "caption": "Revert File",
+        "mnemonic": "v"
+      },
+      {
+        "command": "close_all",
+        "caption": "Close All Files"
+      },
+      {
+        "caption": "-",
+        "id": "exit"
+      },
+      {
+        "command": "exit",
+        "caption": "Exit",
+        "mnemonic": "x",
+        "platform": "Windows"
+      },
+      {
+        "command": "exit",
+        "caption": "Quit",
+        "mnemonic": "Q",
+        "platform": "Linux"
+      },
     ]
   },
   {
@@ -51,16 +179,29 @@
       {
         "caption": "Copy as HTML",
         "command": "copy_as_html",
-        "args": { "enclosing_tags": true, "font_size": false }
+        "args": {
+          "enclosing_tags": true,
+          "font_size": false
+        }
       },
-      { "command": "paste_and_indent", "mnemonic": "I" },
-      { "caption": "-" },
+      {
+        "command": "paste_and_indent",
+        "mnemonic": "I"
+      },
+      {
+        "caption": "-"
+      },
       {
         "caption": "Line",
         "mnemonic": "L",
         "id": "line",
         "children": [
-          { "command": "reindent", "args": { "single_line": true } },
+          {
+            "command": "reindent",
+            "args": {
+              "single_line": true
+            }
+          },
         ]
       },
       {
@@ -68,63 +209,97 @@
         "mnemonic": "T",
         "id": "text",
         "children": [
-          { "command": "revert_hunk" },
-          { "command": "revert_modification" },
-          { "command": "toggle_inline_diff" },
-          { "caption": "-" },
+          {
+            "command": "revert_hunk"
+          },
+          {
+            "command": "revert_modification"
+          },
+          {
+            "command": "toggle_inline_diff"
+          },
+          {
+            "caption": "-"
+          },
           {
             "command": "run_macro_file",
-            "args": { "file": "res://Packages/Default/Add Line Before.sublime-macro" },
+            "args": {
+              "file": "res://Packages/Default/Add Line Before.sublime-macro"
+            },
             "caption": "Insert Line Before"
           },
           {
             "command": "run_macro_file",
-            "args": { "file": "res://Packages/Default/Add Line.sublime-macro" },
+            "args": {
+              "file": "res://Packages/Default/Add Line.sublime-macro"
+            },
             "caption": "Insert Line After"
           },
-          { "caption": "-" },
+          {
+            "caption": "-"
+          },
           {
             "command": "delete_word",
-            "args": { "forward": true },
+            "args": {
+              "forward": true
+            },
             "caption": "Delete Word Forward"
           },
           {
             "command": "delete_word",
-            "args": { "forward": false },
+            "args": {
+              "forward": false
+            },
             "caption": "Delete Word Backward"
           },
           {
             "command": "run_macro_file",
-            "args": { "file": "res://Packages/Default/Delete Line.sublime-macro" },
+            "args": {
+              "file": "res://Packages/Default/Delete Line.sublime-macro"
+            },
             "caption": "Delete Line"
           },
           {
             "command": "run_macro_file",
-            "args": { "file": "res://Packages/Default/Delete to Hard EOL.sublime-macro" },
+            "args": {
+              "file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"
+            },
             "caption": "Delete to End"
           },
           {
             "command": "run_macro_file",
-            "args": { "file": "res://Packages/Default/Delete to Hard BOL.sublime-macro" },
+            "args": {
+              "file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"
+            },
             "caption": "Delete to Beginning"
           },
-          { "caption": "-" },
-          { "command": "transpose" }
+          {
+            "caption": "-"
+          },
+          {
+            "command": "transpose"
+          }
         ]
       },
       {
         "caption": "Tag",
         "id": "tag",
         "children": [
-          { "command": "close_tag" },
+          {
+            "command": "close_tag"
+          },
           {
             "command": "expand_selection",
-            "args": { "to": "tag" },
+            "args": {
+              "to": "tag"
+            },
             "caption": "Expand Selection to Tag"
           },
           {
             "command": "insert_snippet",
-            "args": { "name": "Packages/XML/Snippets/xml-long-tag.sublime-snippet" },
+            "args": {
+              "name": "Packages/XML/Snippets/xml-long-tag.sublime-snippet"
+            },
             "caption": "Wrap Selection With Tag"
           }
         ]
@@ -133,70 +308,123 @@
         "caption": "Mark",
         "id": "mark",
         "children": [
-          { "command": "set_mark" },
-          { "command": "select_to_mark", "caption": "Select to Mark" },
-          { "command": "delete_to_mark", "caption": "Delete to Mark" },
-          { "command": "swap_with_mark", "caption": "Swap with Mark" },
+          {
+            "command": "set_mark"
+          },
+          {
+            "command": "select_to_mark",
+            "caption": "Select to Mark"
+          },
+          {
+            "command": "delete_to_mark",
+            "caption": "Delete to Mark"
+          },
+          {
+            "command": "swap_with_mark",
+            "caption": "Swap with Mark"
+          },
           {
             "command": "clear_bookmarks",
-            "args": { "name": "mark" },
+            "args": {
+              "name": "mark"
+            },
             "caption": "Clear Mark"
           },
-          { "caption": "-" },
-          { "command": "yank" }
+          {
+            "caption": "-"
+          },
+          {
+            "command": "yank"
+          }
         ]
       },
       {
         "caption": "Code Folding",
         "id": "fold",
         "children": [
-          { "command": "fold" },
-          { "command": "unfold" },
-          { "command": "unfold_all", "caption": "Unfold All" },
-          { "caption": "-" },
-          { "caption": "Fold All", "command": "fold_by_level", "args": { "level": 1 } },
+          {
+            "command": "fold"
+          },
+          {
+            "command": "unfold"
+          },
+          {
+            "command": "unfold_all",
+            "caption": "Unfold All"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "caption": "Fold All",
+            "command": "fold_by_level",
+            "args": {
+              "level": 1
+            }
+          },
           {
             "caption": "Fold Level 2",
             "command": "fold_by_level",
-            "args": { "level": 2 }
+            "args": {
+              "level": 2
+            }
           },
           {
             "caption": "Fold Level 3",
             "command": "fold_by_level",
-            "args": { "level": 3 }
+            "args": {
+              "level": 3
+            }
           },
           {
             "caption": "Fold Level 4",
             "command": "fold_by_level",
-            "args": { "level": 4 }
+            "args": {
+              "level": 4
+            }
           },
           {
             "caption": "Fold Level 5",
             "command": "fold_by_level",
-            "args": { "level": 5 }
+            "args": {
+              "level": 5
+            }
           },
           {
             "caption": "Fold Level 6",
             "command": "fold_by_level",
-            "args": { "level": 6 }
+            "args": {
+              "level": 6
+            }
           },
           {
             "caption": "Fold Level 7",
             "command": "fold_by_level",
-            "args": { "level": 7 }
+            "args": {
+              "level": 7
+            }
           },
           {
             "caption": "Fold Level 8",
             "command": "fold_by_level",
-            "args": { "level": 8 }
+            "args": {
+              "level": 8
+            }
           },
           {
             "caption": "Fold Level 9",
             "command": "fold_by_level",
-            "args": { "level": 9 }
+            "args": {
+              "level": 9
+            }
           },
-          { "caption": "-" },
-          { "command": "fold_tag_attributes", "caption": "Fold Tag Attributes" }
+          {
+            "caption": "-"
+          },
+          {
+            "command": "fold_tag_attributes",
+            "caption": "Fold Tag Attributes"
+          }
         ]
       },
       {
@@ -204,64 +432,124 @@
         "mnemonic": "a",
         "id": "convert_case",
         "children": [
-          { "command": "title_case", "caption": "Title Case" },
-          { "command": "upper_case", "caption": "Upper Case" },
-          { "command": "lower_case", "caption": "Lower Case" },
-          { "command": "swap_case", "caption": "Swap Case" },
-          { "command": "convert_ident_case", "caption": "lowerCamelCase", "args": {"case": "title", "first_case": "lower"} },
-          { "command": "convert_ident_case", "caption": "UpperCamelCase", "args": {"case": "title"} },
-          { "command": "convert_ident_case", "caption": "snake_case", "args": {"separator": "_", "case": "lower"} },
-          { "command": "convert_ident_case", "caption": "kebab-case", "args": {"separator": "-", "case": "lower"} },
+          {
+            "command": "title_case",
+            "caption": "Title Case"
+          },
+          {
+            "command": "upper_case",
+            "caption": "Upper Case"
+          },
+          {
+            "command": "lower_case",
+            "caption": "Lower Case"
+          },
+          {
+            "command": "swap_case",
+            "caption": "Swap Case"
+          },
+          {
+            "command": "convert_ident_case",
+            "caption": "lowerCamelCase",
+            "args": {
+              "case": "title",
+              "first_case": "lower"
+            }
+          },
+          {
+            "command": "convert_ident_case",
+            "caption": "UpperCamelCase",
+            "args": {
+              "case": "title"
+            }
+          },
+          {
+            "command": "convert_ident_case",
+            "caption": "snake_case",
+            "args": {
+              "separator": "_",
+              "case": "lower"
+            }
+          },
+          {
+            "command": "convert_ident_case",
+            "caption": "kebab-case",
+            "args": {
+              "separator": "-",
+              "case": "lower"
+            }
+          },
         ]
       },
       {
         "caption": "Wrap",
         "id": "wrap",
         "children": [
-          { "command": "wrap_lines", "caption": "Wrap Paragraph at Ruler" },
           {
             "command": "wrap_lines",
-            "args": { "width": 70 },
+            "caption": "Wrap Paragraph at Ruler"
+          },
+          {
+            "command": "wrap_lines",
+            "args": {
+              "width": 70
+            },
             "caption": "Wrap paragraph at 70 characters"
           },
           {
             "command": "wrap_lines",
-            "args": { "width": 72 },
+            "args": {
+              "width": 72
+            },
             "caption": "Wrap paragraph at 72 characters"
           },
           {
             "command": "wrap_lines",
-            "args": { "width": 78 },
+            "args": {
+              "width": 78
+            },
             "caption": "Wrap paragraph at 78 characters"
           },
           {
             "command": "wrap_lines",
-            "args": { "width": 80 },
+            "args": {
+              "width": 80
+            },
             "caption": "Wrap paragraph at 80 characters"
           },
           {
             "command": "wrap_lines",
-            "args": { "width": 100 },
+            "args": {
+              "width": 100
+            },
             "caption": "Wrap paragraph at 100 characters"
           },
           {
             "command": "wrap_lines",
-            "args": { "width": 120 },
+            "args": {
+              "width": 120
+            },
             "caption": "Wrap paragraph at 120 characters"
           }
         ]
       },
-      { "caption": "-", "id": "permute" },
-
+      {
+        "caption": "-",
+        "id": "permute"
+      },
       {
         "command": "sort_lines",
-        "args": { "case_sensitive": false },
+        "args": {
+          "case_sensitive": false
+        },
         "caption": "Sort Lines",
         "mnemonic": "S"
       },
       {
         "command": "sort_lines",
-        "args": { "case_sensitive": true },
+        "args": {
+          "case_sensitive": true
+        },
         "caption": "Sort Lines (Case Sensitive)"
       },
       {
@@ -269,17 +557,23 @@
         "children": [
           {
             "command": "permute_lines",
-            "args": { "operation": "reverse" },
+            "args": {
+              "operation": "reverse"
+            },
             "caption": "Reverse"
           },
           {
             "command": "permute_lines",
-            "args": { "operation": "unique" },
+            "args": {
+              "operation": "unique"
+            },
             "caption": "Unique"
           },
           {
             "command": "permute_lines",
-            "args": { "operation": "shuffle" },
+            "args": {
+              "operation": "shuffle"
+            },
             "caption": "Shuffle"
           }
         ]
@@ -289,32 +583,45 @@
         "children": [
           {
             "command": "sort_selection",
-            "args": { "case_sensitive": false },
+            "args": {
+              "case_sensitive": false
+            },
             "caption": "Sort"
           },
           {
             "command": "sort_selection",
-            "args": { "case_sensitive": true },
+            "args": {
+              "case_sensitive": true
+            },
             "caption": "Sort (Case Sensitive)"
           },
           {
             "command": "permute_selection",
-            "args": { "operation": "reverse" },
+            "args": {
+              "operation": "reverse"
+            },
             "caption": "Reverse"
           },
           {
             "command": "permute_selection",
-            "args": { "operation": "unique" },
+            "args": {
+              "operation": "unique"
+            },
             "caption": "Unique"
           },
           {
             "command": "permute_selection",
-            "args": { "operation": "shuffle" },
+            "args": {
+              "operation": "shuffle"
+            },
             "caption": "Shuffle"
           }
         ]
       },
-      { "caption": "-", "id": "end" }
+      {
+        "caption": "-",
+        "id": "end"
+      }
     ]
   },
   {
@@ -322,47 +629,206 @@
     "mnemonic": "S",
     "id": "selection",
     "children": [
-      { "command": "split_selection_into_lines", "caption": "Split into Lines" },
-      { "command": "single_selection" },
-      { "caption": "-" },
-      { "command": "select_all" },
-      { "command": "expand_selection", "args": {"to": "smart"}, "caption": "Expand Selection" },
-      { "command": "expand_selection", "args": {"to": "line"}, "caption": "Expand Selection to Line" },
-      { "command": "expand_selection", "args": {"to": "line_prev"}, "caption": "Expand Selection to Line Upward" },
-      { "command": "find_under_expand", "caption": "Expand Selection to Word" },
-      { "command": "expand_selection_to_paragraph", "caption": "Expand Selection to Block" },
-      { "command": "expand_selection_to_paragraph", "args": {"markup_aware": true}, "caption": "Expand Selection to Paragraph" },
-      { "command": "expand_selection", "args": {"to": "scope"}, "caption": "Expand Selection to Scope" },
-      { "command": "expand_selection", "args": {"to": "brackets"}, "caption": "Expand Selection to Brackets" },
-      { "command": "expand_selection", "args": {"to": "indentation"}, "caption": "Expand Selection to Indentation" },
-      { "caption": "-" },
-      { "command": "select_lines", "args": {"forward": false}, "caption": "Add Previous Line" },
-      { "command": "select_lines", "args": {"forward": true}, "caption": "Add Next Line" },
-      { "caption": "-" },
+      {
+        "command": "split_selection_into_lines",
+        "caption": "Split into Lines"
+      },
+      {
+        "command": "single_selection"
+      },
+      {
+        "caption": "-"
+      },
+      {
+        "command": "select_all"
+      },
+      {
+        "command": "expand_selection",
+        "args": {
+          "to": "smart"
+        },
+        "caption": "Expand Selection"
+      },
+      {
+        "command": "expand_selection",
+        "args": {
+          "to": "line"
+        },
+        "caption": "Expand Selection to Line"
+      },
+      {
+        "command": "expand_selection",
+        "args": {
+          "to": "line_prev"
+        },
+        "caption": "Expand Selection to Line Upward"
+      },
+      {
+        "command": "find_under_expand",
+        "caption": "Expand Selection to Word"
+      },
+      {
+        "command": "expand_selection_to_paragraph",
+        "caption": "Expand Selection to Block"
+      },
+      {
+        "command": "expand_selection_to_paragraph",
+        "args": {
+          "markup_aware": true
+        },
+        "caption": "Expand Selection to Paragraph"
+      },
+      {
+        "command": "expand_selection",
+        "args": {
+          "to": "scope"
+        },
+        "caption": "Expand Selection to Scope"
+      },
+      {
+        "command": "expand_selection",
+        "args": {
+          "to": "brackets"
+        },
+        "caption": "Expand Selection to Brackets"
+      },
+      {
+        "command": "expand_selection",
+        "args": {
+          "to": "indentation"
+        },
+        "caption": "Expand Selection to Indentation"
+      },
+      {
+        "caption": "-"
+      },
+      {
+        "command": "select_lines",
+        "args": {
+          "forward": false
+        },
+        "caption": "Add Previous Line"
+      },
+      {
+        "command": "select_lines",
+        "args": {
+          "forward": true
+        },
+        "caption": "Add Next Line"
+      },
+      {
+        "caption": "-"
+      },
       {
         "caption": "Tab Selection",
-        "children":
-        [
-          { "command": "unselect_others", "caption": "Unselect Others" },
-          { "command": "unselect_to_left", "caption": "Unselect to Left" },
-          { "command": "unselect_to_right", "caption": "Unselect to Right" },
-          { "caption": "-" },
-          { "command": "select_to_left", "caption": "Select to Left" },
-          { "command": "select_to_right", "caption": "Select to Right" },
-          { "caption": "-" },
-          { "command": "focus_to_left", "caption": "Focus to Left" },
-          { "command": "focus_to_right", "caption": "Focus to Right" },
-          { "caption": "-" },
-          { "command": "focus_by_index", "args": {"index": 0}, "caption": "Focus Selected Tab 1" },
-          { "command": "focus_by_index", "args": {"index": 1}, "caption": "Focus Selected Tab 2" },
-          { "command": "focus_by_index", "args": {"index": 2}, "caption": "Focus Selected Tab 3" },
-          { "command": "focus_by_index", "args": {"index": 3}, "caption": "Focus Selected Tab 4" },
-          { "command": "focus_by_index", "args": {"index": 4}, "caption": "Focus Selected Tab 5" },
-          { "command": "focus_by_index", "args": {"index": 5}, "caption": "Focus Selected Tab 6" },
-          { "command": "focus_by_index", "args": {"index": 6}, "caption": "Focus Selected Tab 7" },
-          { "command": "focus_by_index", "args": {"index": 7}, "caption": "Focus Selected Tab 8" },
-          { "command": "focus_by_index", "args": {"index": 8}, "caption": "Focus Selected Tab 9" },
-          { "command": "focus_by_index", "args": {"index": 9}, "caption": "Focus Selected Tab 10" },
+        "children": [
+          {
+            "command": "unselect_others",
+            "caption": "Unselect Others"
+          },
+          {
+            "command": "unselect_to_left",
+            "caption": "Unselect to Left"
+          },
+          {
+            "command": "unselect_to_right",
+            "caption": "Unselect to Right"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "select_to_left",
+            "caption": "Select to Left"
+          },
+          {
+            "command": "select_to_right",
+            "caption": "Select to Right"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "focus_to_left",
+            "caption": "Focus to Left"
+          },
+          {
+            "command": "focus_to_right",
+            "caption": "Focus to Right"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "focus_by_index",
+            "args": {
+              "index": 0
+            },
+            "caption": "Focus Selected Tab 1"
+          },
+          {
+            "command": "focus_by_index",
+            "args": {
+              "index": 1
+            },
+            "caption": "Focus Selected Tab 2"
+          },
+          {
+            "command": "focus_by_index",
+            "args": {
+              "index": 2
+            },
+            "caption": "Focus Selected Tab 3"
+          },
+          {
+            "command": "focus_by_index",
+            "args": {
+              "index": 3
+            },
+            "caption": "Focus Selected Tab 4"
+          },
+          {
+            "command": "focus_by_index",
+            "args": {
+              "index": 4
+            },
+            "caption": "Focus Selected Tab 5"
+          },
+          {
+            "command": "focus_by_index",
+            "args": {
+              "index": 5
+            },
+            "caption": "Focus Selected Tab 6"
+          },
+          {
+            "command": "focus_by_index",
+            "args": {
+              "index": 6
+            },
+            "caption": "Focus Selected Tab 7"
+          },
+          {
+            "command": "focus_by_index",
+            "args": {
+              "index": 7
+            },
+            "caption": "Focus Selected Tab 8"
+          },
+          {
+            "command": "focus_by_index",
+            "args": {
+              "index": 8
+            },
+            "caption": "Focus Selected Tab 9"
+          },
+          {
+            "command": "focus_by_index",
+            "args": {
+              "index": 9
+            },
+            "caption": "Focus Selected Tab 10"
+          },
         ]
       },
     ]
@@ -372,34 +838,110 @@
     "mnemonic": "i",
     "id": "find",
     "children": [
-      { "command": "show_panel", "args": {"panel": "find", "reverse": false}, "caption": "Find…" },
-      { "command": "find_next" },
-      { "command": "find_prev", "caption": "Find Previous" },
-      { "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "Incremental Find" },
-      { "caption": "-" },
-      { "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "Replace…" },
-      { "command": "replace_next" },
-      { "caption": "-" },
-      { "command": "find_under", "caption": "Quick Find" },
-      { "command": "find_all_under", "caption": "Quick Find All" },
-      { "command": "find_under_expand", "caption": "Quick Add Next" },
-      { "command": "find_under_expand_skip", "caption": "Quick Skip Next", "platform": "!OSX" },
-      { "caption": "-" },
-      { "command": "slurp_find_string", "caption": "Use Selection for Find" },
-      { "command": "slurp_replace_string", "caption": "Use Selection for Replace" },
-      { "caption": "-" },
-      { "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "Find in Files…" },
+      {
+        "command": "show_panel",
+        "args": {
+          "panel": "find",
+          "reverse": false
+        },
+        "caption": "Find…"
+      },
+      {
+        "command": "find_next"
+      },
+      {
+        "command": "find_prev",
+        "caption": "Find Previous"
+      },
+      {
+        "command": "show_panel",
+        "args": {
+          "panel": "incremental_find",
+          "reverse": false
+        },
+        "caption": "Incremental Find"
+      },
+      {
+        "caption": "-"
+      },
+      {
+        "command": "show_panel",
+        "args": {
+          "panel": "replace",
+          "reverse": false
+        },
+        "caption": "Replace…"
+      },
+      {
+        "command": "replace_next"
+      },
+      {
+        "caption": "-"
+      },
+      {
+        "command": "find_under",
+        "caption": "Quick Find"
+      },
+      {
+        "command": "find_all_under",
+        "caption": "Quick Find All"
+      },
+      {
+        "command": "find_under_expand",
+        "caption": "Quick Add Next"
+      },
+      {
+        "command": "find_under_expand_skip",
+        "caption": "Quick Skip Next",
+        "platform": "!OSX"
+      },
+      {
+        "caption": "-"
+      },
+      {
+        "command": "slurp_find_string",
+        "caption": "Use Selection for Find"
+      },
+      {
+        "command": "slurp_replace_string",
+        "caption": "Use Selection for Replace"
+      },
+      {
+        "caption": "-"
+      },
+      {
+        "command": "show_panel",
+        "args": {
+          "panel": "find_in_files"
+        },
+        "caption": "Find in Files…"
+      },
       {
         "caption": "Find Results",
         "mnemonic": "R",
-        "children":
-        [
-          { "command": "show_panel", "args": {"panel": "output.find_results", "panel_name" : "Results Panel", "toggle" : true, "toggle_when_not_focused": true} },
-          { "command": "next_result" },
-          { "command": "prev_result", "caption": "Previous Result" }
+        "children": [
+          {
+            "command": "show_panel",
+            "args": {
+              "panel": "output.find_results",
+              "panel_name": "Results Panel",
+              "toggle": true,
+              "toggle_when_not_focused": true
+            }
+          },
+          {
+            "command": "next_result"
+          },
+          {
+            "command": "prev_result",
+            "caption": "Previous Result"
+          }
         ]
       },
-      { "command": "cancel_find", "caption": "Cancel Find in Files" },
+      {
+        "command": "cancel_find",
+        "caption": "Cancel Find in Files"
+      },
     ]
   },
   {
@@ -407,15 +949,39 @@
     "mnemonic": "V",
     "id": "view",
     "children": [
-      { "command": "toggle_minimap" },
-      { "command": "toggle_tabs" },
-      { "command": "toggle_status_bar" },
-      { "command": "toggle_menu" },
-      { "command": "show_panel", "args": { "panel": "console", "toggle": true } },
-      { "caption": "-", "id": "full_screen" },
-      { "command": "toggle_full_screen" },
-      { "command": "toggle_distraction_free" },
-      { "caption": "-", "id": "groups" },
+      {
+        "command": "toggle_minimap"
+      },
+      {
+        "command": "toggle_tabs"
+      },
+      {
+        "command": "toggle_status_bar"
+      },
+      {
+        "command": "toggle_menu"
+      },
+      {
+        "command": "show_panel",
+        "args": {
+          "panel": "console",
+          "toggle": true
+        }
+      },
+      {
+        "caption": "-",
+        "id": "full_screen"
+      },
+      {
+        "command": "toggle_full_screen"
+      },
+      {
+        "command": "toggle_distraction_free"
+      },
+      {
+        "caption": "-",
+        "id": "groups"
+      },
       {
         "caption": "Layout",
         "mnemonic": "L",
@@ -425,63 +991,237 @@
             "caption": "Single",
             "command": "set_layout",
             "args": {
-              "cols": [0.0, 1.0],
-              "rows": [0.0, 1.0],
-              "cells": [[0, 0, 1, 1]]
+              "cols": [
+                0.0,
+                1.0
+              ],
+              "rows": [
+                0.0,
+                1.0
+              ],
+              "cells": [
+                [
+                  0,
+                  0,
+                  1,
+                  1
+                ]
+              ]
             }
           },
           {
             "caption": "Columns: 2",
             "command": "set_layout",
             "args": {
-              "cols": [0.0, 0.5, 1.0],
-              "rows": [0.0, 1.0],
-              "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+              "cols": [
+                0.0,
+                0.5,
+                1.0
+              ],
+              "rows": [
+                0.0,
+                1.0
+              ],
+              "cells": [
+                [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  0,
+                  2,
+                  1
+                ]
+              ]
             }
           },
           {
             "caption": "Columns: 3",
             "command": "set_layout",
             "args": {
-              "cols": [0.0, 0.33, 0.66, 1.0],
-              "rows": [0.0, 1.0],
-              "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
+              "cols": [
+                0.0,
+                0.33,
+                0.66,
+                1.0
+              ],
+              "rows": [
+                0.0,
+                1.0
+              ],
+              "cells": [
+                [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  0,
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  0,
+                  3,
+                  1
+                ]
+              ]
             }
           },
           {
             "caption": "Columns: 4",
             "command": "set_layout",
             "args": {
-              "cols": [0.0, 0.25, 0.5, 0.75, 1.0],
-              "rows": [0.0, 1.0],
-              "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]
+              "cols": [
+                0.0,
+                0.25,
+                0.5,
+                0.75,
+                1.0
+              ],
+              "rows": [
+                0.0,
+                1.0
+              ],
+              "cells": [
+                [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  0,
+                  2,
+                  1
+                ],
+                [
+                  2,
+                  0,
+                  3,
+                  1
+                ],
+                [
+                  3,
+                  0,
+                  4,
+                  1
+                ]
+              ]
             }
           },
           {
             "caption": "Rows: 2",
             "command": "set_layout",
             "args": {
-              "cols": [0.0, 1.0],
-              "rows": [0.0, 0.5, 1.0],
-              "cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+              "cols": [
+                0.0,
+                1.0
+              ],
+              "rows": [
+                0.0,
+                0.5,
+                1.0
+              ],
+              "cells": [
+                [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  1,
+                  2
+                ]
+              ]
             }
           },
           {
             "caption": "Rows: 3",
             "command": "set_layout",
             "args": {
-              "cols": [0.0, 1.0],
-              "rows": [0.0, 0.33, 0.66, 1.0],
-              "cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]
+              "cols": [
+                0.0,
+                1.0
+              ],
+              "rows": [
+                0.0,
+                0.33,
+                0.66,
+                1.0
+              ],
+              "cells": [
+                [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  2,
+                  1,
+                  3
+                ]
+              ]
             }
           },
           {
             "caption": "Grid: 4",
             "command": "set_layout",
             "args": {
-              "cols": [0.0, 0.5, 1.0],
-              "rows": [0.0, 0.5, 1.0],
-              "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [0, 1, 1, 2], [1, 1, 2, 2]]
+              "cols": [
+                0.0,
+                0.5,
+                1.0
+              ],
+              "rows": [
+                0.0,
+                0.5,
+                1.0
+              ],
+              "cells": [
+                [
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  0,
+                  2,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  1,
+                  2
+                ],
+                [
+                  1,
+                  1,
+                  2,
+                  2
+                ]
+              ]
             }
           }
         ]
@@ -489,41 +1229,63 @@
       {
         "caption": "Groups",
         "children": [
-          { "command": "new_pane", "caption": "Move File to New Group" },
-          { "command": "new_pane", "args": {"move": false}, "caption": "New Group" },
-          { "command": "close_pane", "caption": "Close Group" },
-
-          { "caption": "-" },
-
+          {
+            "command": "new_pane",
+            "caption": "Move File to New Group"
+          },
+          {
+            "command": "new_pane",
+            "args": {
+              "move": false
+            },
+            "caption": "New Group"
+          },
+          {
+            "command": "close_pane",
+            "caption": "Close Group"
+          },
+          {
+            "caption": "-"
+          },
           {
             "caption": "Max Columns: 1",
             "command": "set_max_columns",
             "checkbox": true,
-            "args": { "columns": 1 }
+            "args": {
+              "columns": 1
+            }
           },
           {
             "caption": "Max Columns: 2",
             "command": "set_max_columns",
             "checkbox": true,
-            "args": { "columns": 2 }
+            "args": {
+              "columns": 2
+            }
           },
           {
             "caption": "Max Columns: 3",
             "command": "set_max_columns",
             "checkbox": true,
-            "args": { "columns": 3 }
+            "args": {
+              "columns": 3
+            }
           },
           {
             "caption": "Max Columns: 4",
             "command": "set_max_columns",
             "checkbox": true,
-            "args": { "columns": 4 }
+            "args": {
+              "columns": 4
+            }
           },
           {
             "caption": "Max Columns: 5",
             "command": "set_max_columns",
             "checkbox": true,
-            "args": { "columns": 5 }
+            "args": {
+              "columns": 5
+            }
           },
         ]
       },
@@ -531,40 +1293,106 @@
         "caption": "Focus Group",
         "mnemonic": "F",
         "children": [
-          { "command": "focus_neighboring_group", "caption": "Next" },
           {
             "command": "focus_neighboring_group",
-            "args": { "forward": false },
+            "caption": "Next"
+          },
+          {
+            "command": "focus_neighboring_group",
+            "args": {
+              "forward": false
+            },
             "caption": "Previous"
           },
-          { "caption": "-" },
-          { "command": "focus_group", "args": { "group": 0 }, "caption": "Group 1" },
-          { "command": "focus_group", "args": { "group": 1 }, "caption": "Group 2" },
-          { "command": "focus_group", "args": { "group": 2 }, "caption": "Group 3" },
-          { "command": "focus_group", "args": { "group": 3 }, "caption": "Group 4" }
+          {
+            "caption": "-"
+          },
+          {
+            "command": "focus_group",
+            "args": {
+              "group": 0
+            },
+            "caption": "Group 1"
+          },
+          {
+            "command": "focus_group",
+            "args": {
+              "group": 1
+            },
+            "caption": "Group 2"
+          },
+          {
+            "command": "focus_group",
+            "args": {
+              "group": 2
+            },
+            "caption": "Group 3"
+          },
+          {
+            "command": "focus_group",
+            "args": {
+              "group": 3
+            },
+            "caption": "Group 4"
+          }
         ]
       },
       {
         "caption": "Move File to Group",
         "mnemonic": "M",
         "children": [
-          { "command": "move_to_neighboring_group", "caption": "Next" },
           {
             "command": "move_to_neighboring_group",
-            "args": { "forward": false },
+            "caption": "Next"
+          },
+          {
+            "command": "move_to_neighboring_group",
+            "args": {
+              "forward": false
+            },
             "caption": "Previous"
           },
-          { "caption": "-" },
-          { "command": "move_to_group", "args": { "group": 0 }, "caption": "Group 1" },
-          { "command": "move_to_group", "args": { "group": 1 }, "caption": "Group 2" },
-          { "command": "move_to_group", "args": { "group": 2 }, "caption": "Group 3" },
-          { "command": "move_to_group", "args": { "group": 3 }, "caption": "Group 4" }
+          {
+            "caption": "-"
+          },
+          {
+            "command": "move_to_group",
+            "args": {
+              "group": 0
+            },
+            "caption": "Group 1"
+          },
+          {
+            "command": "move_to_group",
+            "args": {
+              "group": 1
+            },
+            "caption": "Group 2"
+          },
+          {
+            "command": "move_to_group",
+            "args": {
+              "group": 2
+            },
+            "caption": "Group 3"
+          },
+          {
+            "command": "move_to_group",
+            "args": {
+              "group": 3
+            },
+            "caption": "Group 4"
+          }
         ]
       },
-      { "caption": "-" },
+      {
+        "caption": "-"
+      },
       {
         "command": "toggle_setting",
-        "args": { "setting": "word_wrap" },
+        "args": {
+          "setting": "word_wrap"
+        },
         "caption": "Word Wrap",
         "mnemonic": "W",
         "checkbox": true
@@ -574,44 +1402,67 @@
         "children": [
           {
             "command": "set_setting",
-            "args": { "setting": "wrap_width", "value": 0 },
+            "args": {
+              "setting": "wrap_width",
+              "value": 0
+            },
             "caption": "Automatic",
             "checkbox": true
           },
-          { "caption": "-" },
+          {
+            "caption": "-"
+          },
           {
             "command": "set_setting",
-            "args": { "setting": "wrap_width", "value": 70 },
+            "args": {
+              "setting": "wrap_width",
+              "value": 70
+            },
             "caption": "70",
             "checkbox": true
           },
           {
             "command": "set_setting",
-            "args": { "setting": "wrap_width", "value": 72 },
+            "args": {
+              "setting": "wrap_width",
+              "value": 72
+            },
             "caption": "72",
             "checkbox": true
           },
           {
             "command": "set_setting",
-            "args": { "setting": "wrap_width", "value": 78 },
+            "args": {
+              "setting": "wrap_width",
+              "value": 78
+            },
             "caption": "78",
             "checkbox": true
           },
           {
             "command": "set_setting",
-            "args": { "setting": "wrap_width", "value": 80 },
+            "args": {
+              "setting": "wrap_width",
+              "value": 80
+            },
             "caption": "80",
             "checkbox": true
           },
           {
             "command": "set_setting",
-            "args": { "setting": "wrap_width", "value": 100 },
+            "args": {
+              "setting": "wrap_width",
+              "value": 100
+            },
             "caption": "100",
             "checkbox": true
           },
           {
             "command": "set_setting",
-            "args": { "setting": "wrap_width", "value": 120 },
+            "args": {
+              "setting": "wrap_width",
+              "value": 120
+            },
             "caption": "120",
             "checkbox": true
           }
@@ -622,59 +1473,102 @@
         "children": [
           {
             "command": "set_setting",
-            "args": { "setting": "rulers", "value": [] },
+            "args": {
+              "setting": "rulers",
+              "value": []
+            },
             "caption": "None",
             "checkbox": true
           },
-          { "caption": "-" },
+          {
+            "caption": "-"
+          },
           {
             "command": "set_setting",
-            "args": { "setting": "rulers", "value": [70] },
+            "args": {
+              "setting": "rulers",
+              "value": [
+                70
+              ]
+            },
             "caption": "70",
             "checkbox": true
           },
           {
             "command": "set_setting",
-            "args": { "setting": "rulers", "value": [72] },
+            "args": {
+              "setting": "rulers",
+              "value": [
+                72
+              ]
+            },
             "caption": "72",
             "checkbox": true
           },
           {
             "command": "set_setting",
-            "args": { "setting": "rulers", "value": [78] },
+            "args": {
+              "setting": "rulers",
+              "value": [
+                78
+              ]
+            },
             "caption": "78",
             "checkbox": true
           },
           {
             "command": "set_setting",
-            "args": { "setting": "rulers", "value": [80] },
+            "args": {
+              "setting": "rulers",
+              "value": [
+                80
+              ]
+            },
             "caption": "80",
             "checkbox": true
           },
           {
             "command": "set_setting",
-            "args": { "setting": "rulers", "value": [100] },
+            "args": {
+              "setting": "rulers",
+              "value": [
+                100
+              ]
+            },
             "caption": "100",
             "checkbox": true
           },
           {
             "command": "set_setting",
-            "args": { "setting": "rulers", "value": [120] },
+            "args": {
+              "setting": "rulers",
+              "value": [
+                120
+              ]
+            },
             "caption": "120",
             "checkbox": true
           }
         ]
       },
-      { "caption": "-" },
+      {
+        "caption": "-"
+      },
       {
         "command": "toggle_setting",
-        "args": { "setting": "spell_check" },
+        "args": {
+          "setting": "spell_check"
+        },
         "caption": "Spell Check",
         "checkbox": true
       },
       {
         "caption": "Dictionary",
-        "children": [{ "command": "$dictionaries" }]
+        "children": [
+          {
+            "command": "$dictionaries"
+          }
+        ]
       }
     ]
   },
@@ -683,21 +1577,48 @@
     "mnemonic": "G",
     "id": "goto",
     "children": [
-      { "command": "goto_symbol_in_project", "caption": "Goto Symbol in Project…" },
-      { "command": "goto_definition", "caption": "Goto Definition…" },
-      { "command": "goto_reference", "caption": "Goto Reference…" },
-      { "caption": "-" },
+      {
+        "command": "goto_symbol_in_project",
+        "caption": "Goto Symbol in Project…"
+      },
+      {
+        "command": "goto_definition",
+        "caption": "Goto Definition…"
+      },
+      {
+        "command": "goto_reference",
+        "caption": "Goto Reference…"
+      },
+      {
+        "caption": "-"
+      },
       {
         "caption": "Switch File",
         "mnemonic": "t",
         "id": "switch_file",
         "children": [
-          { "command": "next_view", "caption": "Next File" },
-          { "command": "prev_view", "caption": "Previous File" },
-          { "caption": "-" },
-          { "command": "next_view_in_stack", "caption": "Next File in Stack" },
-          { "command": "prev_view_in_stack", "caption": "Previous File in Stack" },
-          { "caption": "-" },
+          {
+            "command": "next_view",
+            "caption": "Next File"
+          },
+          {
+            "command": "prev_view",
+            "caption": "Previous File"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "next_view_in_stack",
+            "caption": "Next File in Stack"
+          },
+          {
+            "command": "prev_view_in_stack",
+            "caption": "Previous File in Stack"
+          },
+          {
+            "caption": "-"
+          },
           {
             "command": "switch_file",
             "args": {
@@ -719,30 +1640,95 @@
             "caption": "Switch Header/Implementation",
             "mnemonic": "H"
           },
-          { "caption": "-" },
-          { "command": "select_by_index", "args": { "index": 0 } },
-          { "command": "select_by_index", "args": { "index": 1 } },
-          { "command": "select_by_index", "args": { "index": 2 } },
-          { "command": "select_by_index", "args": { "index": 3 } },
-          { "command": "select_by_index", "args": { "index": 4 } },
-          { "command": "select_by_index", "args": { "index": 5 } },
-          { "command": "select_by_index", "args": { "index": 6 } },
-          { "command": "select_by_index", "args": { "index": 7 } },
-          { "command": "select_by_index", "args": { "index": 8 } },
-          { "command": "select_by_index", "args": { "index": 9 } }
+          {
+            "caption": "-"
+          },
+          {
+            "command": "select_by_index",
+            "args": {
+              "index": 0
+            }
+          },
+          {
+            "command": "select_by_index",
+            "args": {
+              "index": 1
+            }
+          },
+          {
+            "command": "select_by_index",
+            "args": {
+              "index": 2
+            }
+          },
+          {
+            "command": "select_by_index",
+            "args": {
+              "index": 3
+            }
+          },
+          {
+            "command": "select_by_index",
+            "args": {
+              "index": 4
+            }
+          },
+          {
+            "command": "select_by_index",
+            "args": {
+              "index": 5
+            }
+          },
+          {
+            "command": "select_by_index",
+            "args": {
+              "index": 6
+            }
+          },
+          {
+            "command": "select_by_index",
+            "args": {
+              "index": 7
+            }
+          },
+          {
+            "command": "select_by_index",
+            "args": {
+              "index": 8
+            }
+          },
+          {
+            "command": "select_by_index",
+            "args": {
+              "index": 9
+            }
+          }
         ]
       },
-      { "caption": "-" },
+      {
+        "caption": "-"
+      },
       {
         "caption": "Scroll",
         "mnemonic": "S",
         "id": "scroll",
         "children": [
-          { "command": "show_at_center", "caption": "Scroll to Selection" },
-          { "command": "scroll_lines", "args": { "amount": 1.0 }, "caption": "Line Up" },
+          {
+            "command": "show_at_center",
+            "caption": "Scroll to Selection"
+          },
           {
             "command": "scroll_lines",
-            "args": { "amount": -1.0 },
+            "args": {
+              "amount": 1.0
+            },
+            "caption": "Line Up"
+          },
+          {
+            "command": "scroll_lines",
+            "args": {
+              "amount": -1.0
+            },
             "caption": "Line Down"
           }
         ]
@@ -752,34 +1738,133 @@
         "mnemonic": "B",
         "id": "bookmarks",
         "children": [
-          { "command": "toggle_bookmark", "args": { "toggle_line": true } },
-          { "command": "next_bookmark" },
-          { "command": "prev_bookmark" },
-          { "command": "clear_bookmarks" },
-          { "command": "select_all_bookmarks" },
-          { "caption": "-" },
-          { "command": "select_bookmark", "args": { "index": 0 } },
-          { "command": "select_bookmark", "args": { "index": 1 } },
-          { "command": "select_bookmark", "args": { "index": 2 } },
-          { "command": "select_bookmark", "args": { "index": 3 } },
-          { "command": "select_bookmark", "args": { "index": 4 } },
-          { "command": "select_bookmark", "args": { "index": 5 } },
-          { "command": "select_bookmark", "args": { "index": 6 } },
-          { "command": "select_bookmark", "args": { "index": 7 } },
-          { "command": "select_bookmark", "args": { "index": 8 } },
-          { "command": "select_bookmark", "args": { "index": 9 } },
-          { "command": "select_bookmark", "args": { "index": 10 } },
-          { "command": "select_bookmark", "args": { "index": 11 } },
-          { "command": "select_bookmark", "args": { "index": 12 } },
-          { "command": "select_bookmark", "args": { "index": 13 } },
-          { "command": "select_bookmark", "args": { "index": 14 } },
-          { "command": "select_bookmark", "args": { "index": 15 } }
+          {
+            "command": "toggle_bookmark",
+            "args": {
+              "toggle_line": true
+            }
+          },
+          {
+            "command": "next_bookmark"
+          },
+          {
+            "command": "prev_bookmark"
+          },
+          {
+            "command": "clear_bookmarks"
+          },
+          {
+            "command": "select_all_bookmarks"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 0
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 1
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 2
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 3
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 4
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 5
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 6
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 7
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 8
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 9
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 10
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 11
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 12
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 13
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 14
+            }
+          },
+          {
+            "command": "select_bookmark",
+            "args": {
+              "index": 15
+            }
+          }
         ]
       },
-      { "caption": "-" },
+      {
+        "caption": "-"
+      },
       {
         "command": "move_to",
-        "args": { "to": "brackets" },
+        "args": {
+          "to": "brackets"
+        },
         "caption": "Jump to Matching Bracket"
       }
     ]
@@ -791,59 +1876,174 @@
     "children": [
       {
         "command": "show_overlay",
-        "args": { "overlay": "command_palette" },
+        "args": {
+          "overlay": "command_palette"
+        },
         "caption": "Command Palette…"
       },
       {
         "command": "show_overlay",
-        "args": { "overlay": "command_palette", "text": "Snippet: " },
+        "args": {
+          "overlay": "command_palette",
+          "text": "Snippet: "
+        },
         "caption": "Snippets…"
       },
-      { "caption": "-", "id": "build" },
+      {
+        "caption": "-",
+        "id": "build"
+      },
       {
         "caption": "Build System",
         "mnemonic": "u",
         "children": [
           {
             "command": "set_build_system",
-            "args": { "file": "" },
+            "args": {
+              "file": ""
+            },
             "caption": "Automatic",
             "checkbox": true
           },
-          { "caption": "-" },
-          { "command": "set_build_system", "args": { "index": 0 }, "checkbox": true },
-          { "command": "set_build_system", "args": { "index": 1 }, "checkbox": true },
-          { "command": "set_build_system", "args": { "index": 2 }, "checkbox": true },
-          { "command": "set_build_system", "args": { "index": 3 }, "checkbox": true },
-          { "command": "set_build_system", "args": { "index": 4 }, "checkbox": true },
-          { "command": "set_build_system", "args": { "index": 5 }, "checkbox": true },
-          { "command": "set_build_system", "args": { "index": 6 }, "checkbox": true },
-          { "command": "set_build_system", "args": { "index": 7 }, "checkbox": true },
-          { "command": "set_build_system", "args": { "index": 8 }, "checkbox": true },
-          { "command": "set_build_system", "args": { "index": 9 }, "checkbox": true },
-          { "command": "set_build_system", "args": { "index": 10 }, "checkbox": true },
-          { "command": "set_build_system", "args": { "index": 11 }, "checkbox": true },
-          { "caption": "-" },
-          { "command": "$build_systems" },
-          { "caption": "-" },
-          { "command": "new_build_system", "caption": "New Build System…" }
+          {
+            "caption": "-"
+          },
+          {
+            "command": "set_build_system",
+            "args": {
+              "index": 0
+            },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": {
+              "index": 1
+            },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": {
+              "index": 2
+            },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": {
+              "index": 3
+            },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": {
+              "index": 4
+            },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": {
+              "index": 5
+            },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": {
+              "index": 6
+            },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": {
+              "index": 7
+            },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": {
+              "index": 8
+            },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": {
+              "index": 9
+            },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": {
+              "index": 10
+            },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": {
+              "index": 11
+            },
+            "checkbox": true
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "$build_systems"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "new_build_system",
+            "caption": "New Build System…"
+          }
         ]
       },
-      { "command": "build", "mnemonic": "B" },
-      { "command": "build", "args": { "select": true }, "caption": "Build With…" },
-      { "command": "cancel_build", "caption": "Cancel Build", "mnemonic": "C" },
+      {
+        "command": "build",
+        "mnemonic": "B"
+      },
+      {
+        "command": "build",
+        "args": {
+          "select": true
+        },
+        "caption": "Build With…"
+      },
+      {
+        "command": "cancel_build",
+        "caption": "Cancel Build",
+        "mnemonic": "C"
+      },
       {
         "caption": "Build Results",
         "mnemonic": "R",
         "children": [
           {
             "command": "show_panel",
-            "args": { "panel": "output.exec" },
+            "args": {
+              "panel": "output.exec"
+            },
             "caption": "Show Build Results",
             "mnemonic": "S"
           },
-          { "command": "next_result", "mnemonic": "N" },
-          { "command": "prev_result", "caption": "Previous Result", "mnemonic": "P" }
+          {
+            "command": "next_result",
+            "mnemonic": "N"
+          },
+          {
+            "command": "prev_result",
+            "caption": "Previous Result",
+            "mnemonic": "P"
+          }
         ]
       },
       {
@@ -852,32 +2052,82 @@
         "mnemonic": "A",
         "checkbox": true
       },
-      { "caption": "-", "id": "macros" },
-      { "command": "toggle_record_macro", "mnemonic": "M" },
-      { "command": "run_macro", "caption": "Playback Macro", "mnemonic": "P" },
-      { "command": "save_macro", "caption": "Save Macro…", "mnemonic": "v" },
+      {
+        "caption": "-",
+        "id": "macros"
+      },
+      {
+        "command": "toggle_record_macro",
+        "mnemonic": "M"
+      },
+      {
+        "command": "run_macro",
+        "caption": "Playback Macro",
+        "mnemonic": "P"
+      },
+      {
+        "command": "save_macro",
+        "caption": "Save Macro…",
+        "mnemonic": "v"
+      },
       {
         "caption": "Macros",
-        "children": [{ "command": "$macros" }]
+        "children": [
+          {
+            "command": "$macros"
+          }
+        ]
       },
-      { "caption": "-" },
+      {
+        "caption": "-"
+      },
       {
         "caption": "Developer",
         "children": [
-          { "command": "new_plugin", "caption": "New Plugin…" },
-          { "command": "new_snippet", "caption": "New Snippet…" },
-          { "command": "new_syntax", "caption": "New Syntax…" },
-          { "command": "convert_syntax" },
-          { "caption": "-" },
-          { "caption": "-" },
-          { "command": "profile_plugins" },
-          { "caption": "-" },
-          { "command": "view_resource", "caption": "View Package File…" },
-          { "command": "show_scope_name" },
+          {
+            "command": "new_plugin",
+            "caption": "New Plugin…"
+          },
+          {
+            "command": "new_snippet",
+            "caption": "New Snippet…"
+          },
+          {
+            "command": "new_syntax",
+            "caption": "New Syntax…"
+          },
+          {
+            "command": "convert_syntax"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "profile_plugins"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "view_resource",
+            "caption": "View Package File…"
+          },
+          {
+            "command": "show_scope_name"
+          },
         ]
       },
-      { "command": "install_package_control", "caption": "Install Package Control…" },
-      { "caption": "-", "id": "end" }
+      {
+        "command": "install_package_control",
+        "caption": "Install Package Control…"
+      },
+      {
+        "caption": "-",
+        "id": "end"
+      }
     ]
   },
   {
@@ -885,37 +2135,133 @@
     "id": "project",
     "mnemonic": "P",
     "children": [
-      { "command": "prompt_open_project_or_workspace", "caption": "Open Project…" },
-      { "command": "prompt_switch_project_or_workspace", "caption": "Switch Project…" },
-      { "command": "prompt_select_workspace", "caption": "Quick Switch Project…", "mnemonic": "S" },
+      {
+        "command": "prompt_open_project_or_workspace",
+        "caption": "Open Project…"
+      },
+      {
+        "command": "prompt_switch_project_or_workspace",
+        "caption": "Switch Project…"
+      },
+      {
+        "command": "prompt_select_workspace",
+        "caption": "Quick Switch Project…",
+        "mnemonic": "S"
+      },
       {
         "caption": "Open Recent",
-        "children":
-        [
-          { "command": "open_recent_project_or_workspace", "args": {"index": 0 } },
-          { "command": "open_recent_project_or_workspace", "args": {"index": 1 } },
-          { "command": "open_recent_project_or_workspace", "args": {"index": 2 } },
-          { "command": "open_recent_project_or_workspace", "args": {"index": 3 } },
-          { "command": "open_recent_project_or_workspace", "args": {"index": 4 } },
-          { "command": "open_recent_project_or_workspace", "args": {"index": 5 } },
-          { "command": "open_recent_project_or_workspace", "args": {"index": 6 } },
-          { "command": "open_recent_project_or_workspace", "args": {"index": 7 } },
-          { "caption": "-" },
-          { "command": "clear_recent_projects_and_workspaces", "caption": "Clear Items" },
-          { "command": "clear_missing_recent_projects_and_workspaces", "caption": "Remove Deleted" },
+        "children": [
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": {
+              "index": 0
+            }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": {
+              "index": 1
+            }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": {
+              "index": 2
+            }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": {
+              "index": 3
+            }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": {
+              "index": 4
+            }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": {
+              "index": 5
+            }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": {
+              "index": 6
+            }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": {
+              "index": 7
+            }
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "clear_recent_projects_and_workspaces",
+            "caption": "Clear Items"
+          },
+          {
+            "command": "clear_missing_recent_projects_and_workspaces",
+            "caption": "Remove Deleted"
+          },
         ]
       },
-      { "caption": "-" },
-      { "command": "save_project_and_workspace_as", "caption": "Save Project As…", "mnemonic": "A" },
-      { "command": "close_workspace", "caption": "Close Project", "mnemonic": "C" },
-      { "command": "open_file", "args": {"file": "${project}"}, "caption": "Edit Project" },
-      { "caption": "-" },
-      { "command": "new_window_for_project", "caption": "New Workspace for Project" },
-      { "command": "save_workspace_as", "caption": "Save Workspace As…", "mnemonic": "A" },
-      { "caption": "-" },
-      { "command": "prompt_add_folder", "caption": "Add Folder to Project…", "mnemonic": "d" },
-      { "command": "close_folder_list", "caption": "Remove all Folders from Project", "mnemonic": "m" },
-      { "command": "refresh_folder_list", "caption": "Refresh Folders", "mnemonic": "e" },
+      {
+        "caption": "-"
+      },
+      {
+        "command": "save_project_and_workspace_as",
+        "caption": "Save Project As…",
+        "mnemonic": "A"
+      },
+      {
+        "command": "close_workspace",
+        "caption": "Close Project",
+        "mnemonic": "C"
+      },
+      {
+        "command": "open_file",
+        "args": {
+          "file": "${project}"
+        },
+        "caption": "Edit Project"
+      },
+      {
+        "caption": "-"
+      },
+      {
+        "command": "new_window_for_project",
+        "caption": "New Workspace for Project"
+      },
+      {
+        "command": "save_workspace_as",
+        "caption": "Save Workspace As…",
+        "mnemonic": "A"
+      },
+      {
+        "caption": "-"
+      },
+      {
+        "command": "prompt_add_folder",
+        "caption": "Add Folder to Project…",
+        "mnemonic": "d"
+      },
+      {
+        "command": "close_folder_list",
+        "caption": "Remove all Folders from Project",
+        "mnemonic": "m"
+      },
+      {
+        "command": "refresh_folder_list",
+        "caption": "Refresh Folders",
+        "mnemonic": "e"
+      },
     ]
   },
   {
@@ -923,43 +2269,59 @@
     "mnemonic": "n",
     "id": "preferences",
     "children": [
-      { "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Browse Packages…", "mnemonic": "B" },
-      { "caption": "-" },
       {
-        "command": "edit_settings", "args":
-        {
+        "command": "open_dir",
+        "args": {
+          "dir": "$packages"
+        },
+        "caption": "Browse Packages…",
+        "mnemonic": "B"
+      },
+      {
+        "caption": "-"
+      },
+      {
+        "command": "edit_settings",
+        "args": {
           "base_file": "${packages}/Default/Preferences.sublime-settings",
           "default": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"
         },
         "caption": "Settings"
       },
-      { "command": "edit_syntax_settings", "caption": "Settings – Syntax Specific" },
       {
-        "command": "edit_settings", "args":
-        {
+        "command": "edit_syntax_settings",
+        "caption": "Settings – Syntax Specific"
+      },
+      {
+        "command": "edit_settings",
+        "args": {
           "base_file": "${packages}/Default/Distraction Free.sublime-settings",
           "default": "{\n\t$0\n}\n"
         },
         "caption": "Settings – Distraction Free"
       },
-      { "caption": "-" },
       {
-        "command": "edit_settings", "args":
-        {
+        "caption": "-"
+      },
+      {
+        "command": "edit_settings",
+        "args": {
           "base_file": "${packages}/Default/Default ($platform).sublime-keymap",
           "default": "[\n\t$0\n]\n"
         },
         "caption": "Key Bindings"
       },
       {
-        "command": "edit_settings", "args":
-        {
+        "command": "edit_settings",
+        "args": {
           "base_file": "${packages}/Default/Default ($platform).sublime-mousemap",
           "default": "[\n\t$0\n]\n"
         },
         "caption": "Mouse Bindings"
       },
-      { "caption": "-" },
+      {
+        "caption": "-"
+      },
       {
         "caption": "Select Color Scheme…",
         "command": "select_color_scheme"
@@ -968,7 +2330,9 @@
         "caption": "Customize Color Scheme",
         "command": "customize_color_scheme"
       },
-      { "caption": "-" },
+      {
+        "caption": "-"
+      },
       {
         "caption": "Select Theme…",
         "command": "select_theme"
@@ -977,16 +2341,31 @@
         "caption": "Customize Theme",
         "command": "customize_theme"
       },
-      { "caption": "-" },
+      {
+        "caption": "-"
+      },
       {
         "caption": "Font",
-        "children":
-        [
-          { "command": "choose_font", "caption": "Choose…" },
-          { "command": "increase_font_size", "caption": "Larger" },
-          { "command": "decrease_font_size", "caption": "Smaller" },
-          { "caption": "-" },
-          { "command": "reset_font_size", "caption": "Reset Size" }
+        "children": [
+          {
+            "command": "choose_font",
+            "caption": "Choose…"
+          },
+          {
+            "command": "increase_font_size",
+            "caption": "Larger"
+          },
+          {
+            "command": "decrease_font_size",
+            "caption": "Smaller"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "command": "reset_font_size",
+            "caption": "Reset Size"
+          }
         ]
       },
     ]
@@ -998,30 +2377,64 @@
     "children": [
       {
         "command": "open_url",
-        "args": { "url": "https://www.sublimetext.com/docs/" },
+        "args": {
+          "url": "https://www.sublimetext.com/docs/"
+        },
         "caption": "Documentation"
       },
       {
         "command": "open_url",
-        "args": { "url": "https://github.com/sublimehq/sublime_text/issues/new/choose" },
+        "args": {
+          "url": "https://github.com/sublimehq/sublime_text/issues/new/choose"
+        },
         "caption": "Report a Bug"
       },
       {
         "command": "open_url",
-        "args": { "url": "https://twitter.com/sublimehq" },
+        "args": {
+          "url": "https://twitter.com/sublimehq"
+        },
         "caption": "Twitter"
       },
-      { "caption": "-" },
-      { "command": "show_progress_window", "caption": "Indexing Status…" },
-      { "caption": "-" },
-      { "command": "purchase_license" },
-      { "command": "upgrade_license" },
-      { "command": "show_license_window", "caption": "Enter License" },
-      { "command": "remove_license" },
-      { "caption": "-" },
-      { "command": "update_check", "caption": "Check for Updates…" },
-      { "command": "show_changelog", "caption": "Changelog…" },
-      { "command": "show_about_window", "caption": "About Sublime Text", "mnemonic": "A" }
+      {
+        "caption": "-"
+      },
+      {
+        "command": "show_progress_window",
+        "caption": "Indexing Status…"
+      },
+      {
+        "caption": "-"
+      },
+      {
+        "command": "purchase_license"
+      },
+      {
+        "command": "upgrade_license"
+      },
+      {
+        "command": "show_license_window",
+        "caption": "Enter License"
+      },
+      {
+        "command": "remove_license"
+      },
+      {
+        "caption": "-"
+      },
+      {
+        "command": "update_check",
+        "caption": "Check for Updates…"
+      },
+      {
+        "command": "show_changelog",
+        "caption": "Changelog…"
+      },
+      {
+        "command": "show_about_window",
+        "caption": "About Sublime Text",
+        "mnemonic": "A"
+      }
     ]
   }
 ]
