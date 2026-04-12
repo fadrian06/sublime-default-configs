@@ -14,16 +14,6 @@
         "mnemonic": "R",
         "children": [
           {
-            "command": "reopen_last_file",
-            "args": {
-              "source": "window"
-            },
-            "caption": "Reopen Closed File"
-          },
-          {
-            "caption": "-"
-          },
-          {
             "command": "open_recent_file",
             "args": {
               "index": 0
@@ -96,21 +86,18 @@
         ]
       },
       {
-        "command": "clone_file",
+        "command": "force_reopen_as",
         "args": {
-          "add_to_selection": true,
-          "retain_viewport_position": true
+          "type": "image"
         },
-        "caption": "Split View",
-        "mnemonic": "e"
+        "caption": "Reopen File as Image"
       },
       {
-        "command": "save",
+        "command": "force_reopen_as",
         "args": {
-          "async": true
+          "type": "text"
         },
-        "caption": "Save",
-        "mnemonic": "S"
+        "caption": "Reopen File as Text"
       },
       {
         "command": "prompt_save_as",
@@ -123,53 +110,11 @@
         "mnemonic": "l"
       },
       {
-        "caption": "-",
-        "id": "window"
+        "command": "html_print",
+        "caption": "Print…",
+        "mnemonic": "P"
       },
-      {
-        "command": "new_window",
-        "caption": "New Window",
-        "mnemonic": "W"
-      },
-      {
-        "command": "close_window",
-        "caption": "Close Window"
-      },
-      {
-        "caption": "-",
-        "id": "close"
-      },
-      {
-        "command": "close",
-        "caption": "Close File",
-        "mnemonic": "C"
-      },
-      {
-        "command": "revert",
-        "caption": "Revert File",
-        "mnemonic": "v"
-      },
-      {
-        "command": "close_all",
-        "caption": "Close All Files"
-      },
-      {
-        "caption": "-",
-        "id": "exit"
-      },
-      {
-        "command": "exit",
-        "caption": "Exit",
-        "mnemonic": "x",
-        "platform": "Windows"
-      },
-      {
-        "command": "exit",
-        "caption": "Quit",
-        "mnemonic": "Q",
-        "platform": "Linux"
-      },
-    ]
+    ],
   },
   {
     "caption": "Edit",
